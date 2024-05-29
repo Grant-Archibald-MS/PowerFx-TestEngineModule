@@ -1,0 +1,24 @@
+testSuite:
+  testSuiteName: Basic Power Fx Unit Test
+  testSuiteDescription: Verified basic operations
+  persona: User1
+  appLogicalName: NA
+
+  testCases:
+    - testCaseName: Sample
+      testSteps: |
+        = Assert(1 = 1);
+
+testSettings:
+  locale: "en-US"
+  recordVideo: true
+  extensionModules:
+    enable: true
+  browserConfigurations:
+    - browser: Chromium
+
+environmentVariables:
+  users:
+    - personaName: User1
+      emailKey: None
+      passwordKey: None
