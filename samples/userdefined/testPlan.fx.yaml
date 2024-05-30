@@ -1,0 +1,29 @@
+testSuite:
+  testSuiteName: Power Fx Unit Test
+  testSuiteDescription: User defined typed and functions
+  persona: User1
+  appLogicalName: NA
+
+  testCases:
+    - testCaseName: User Defined function
+      testSteps: |
+        = Assert(7.81, Distance({3, 2},{9, 7}))
+
+# TODO
+# userDefined: |
+#   - = Point = Type({x: Number, y: Number});
+#       Distance(p1: Point, p2: Point): Number = Sqrt(Power(p2.x - p1.x, 2.0) + Power(p2.y - p1.y, 2.0));
+ 
+testSettings:
+  locale: "en-US"
+  recordVideo: true
+  extensionModules:
+    enable: true
+  browserConfigurations:
+    - browser: Chromium
+
+environmentVariables:
+  users:
+    - personaName: User1
+      emailKey: None
+      passwordKey: None
